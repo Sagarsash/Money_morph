@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Money Morph</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="converter">
+    <div id="first">
+      <img src="cash-coin.svg" class="img" width="50px">
+      <h1> Money Morph </h1>
+    </div>
+    <p><b>Please enter the amount :</b></p>
+    <div class="form">
+      <div class="input">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+      </div>
+      <div class="input">
+        <label for="from">From:</label>
+        <select id="from">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">British Pound</option>
+          <option value="JPY">Japanese Yen</option>
+          <option value="INR">India</option>
+          <option value="CNY">Renminbi</option>
+          <option value="SGD"> Singapore dollar</option>
+          <option value="AED">UAE dirham</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="to">To:</label>
+        <select id="to">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">British Pound</option>
+          <option value="JPY">Japanese Yen</option>
+          <option value="INR">India</option>
+          <option value="CNY">Renminbi</option>
+          <option value="SGD"> Singapore dollar</option>
+          <option value="AED">UAE dirham</option>
+
+        </select>
+      </div>
+    </div>
+    <div class="allign">
+      <button onclick="convert()">Convert</button>
+      <div class="result">
+        <p id="output"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

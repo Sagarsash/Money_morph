@@ -1,0 +1,98 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+/* Header styles */
+#first {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.img {
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #3f51b5;
+}
+
+/* Form styles */
+.converter {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.input {
+  flex: 1;
+  margin-right: 20px;
+}
+#amount{
+  border: 1px solid black;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #3f51b5;
+}
+
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border:1px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #333;
+}
+
+button {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2c3e50;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+#output {
+  font-size: 20px;
+  color: #3f51b5;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  .input {
+    flex: 100%;
+    margin-right: 0;
+  }
+}
